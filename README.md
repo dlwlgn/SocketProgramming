@@ -36,7 +36,7 @@ int init()
     struct sockaddr_in addr = {0};                     //구조체 선언
     addr.sin_family = AF_INET;                         //IPv4
     addr.sin_port = htons(12345);                      //빅엔디안으로 변환
-    addr.sin_addr.s_addr = inet_addr("15.164.48.55");  //통신할 서버 ip 주소 입력
+    addr.sin_addr.s_addr = inet_addr("xx.xxx.xx.xx");  //통신할 서버 ip 주소 입력
 
     ret = connect(fd, (struct sockaddr*)&addr, sizeof(addr));  //위에 선언된 구조체 정보로 서버에 연결
     if (ret == -1) return ret;
