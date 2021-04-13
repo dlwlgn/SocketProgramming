@@ -24,7 +24,7 @@ int init()
     struct sockaddr_in addr = {0};
     addr.sin_family = AF_INET;
     addr.sin_port = htons(12345);
-    addr.sin_addr.s_addr = inet_addr("15.164.48.55");
+    addr.sin_addr.s_addr = inet_addr("xx.xxx.xx.xx");
 
     ret = connect(fd, (struct sockaddr *)&addr, sizeof(addr));
     if (ret == -1) return ret;
